@@ -1,0 +1,62 @@
+ Documentación de la aplicación cafetería.
+
+ Directrices de codificación
+
+Las distintas prácticas de estilo de codificación varían en cada organización, sistema operativo, y en el mismo lenguaje de codificación.
+
+Los siguientes elementos de codificación se pueden definir bajo las directrices de una organización:
+
+    Convención de nomenclatura - Esta sección define cómo nombrar funciones, variables, constantes, y variables globales.
+
+    Sangría - Este es el espacio que se encuentra al principio de cada línea, normalmente incluye de 2 a 8 espacios en blanco o un solo tabulador (véase tecla 'tab').
+
+    Espacio en blanco - Generalmente se omite al final de cada línea.
+
+    Operadores - Define las reglas para escribir operadores lógicos y tareas matemáticas. Por ejemplo, operador de tarea ‘=’ debe tener un espacio antes y después de éste, como en “x = 2”.
+
+    Estructuras de Control - Son las reglas para escribir 'SI..ENTONCES..SI NO'(if..then..else), el SEGÚN (case o switch), declaraciones 'while-until' para afirmaciones de flujo de control únicamente, y en lenguaje ensamblador de moda.
+
+    Longitud de línea y envoltorio - Define el número de caracteres que debe haber en una línea, mayormente una línea tiene 80 caracteres de longitud. Envolver define cómo se envolverá la línea, si es demasiado larga.
+
+    Funciones - Esto define cómo se deben aplicar y manifestar las funciones, con y sin parámetros.
+
+    Variables - Esto menciona cómo se deben manifestar y definir las variables de diferentes tipos de datos.
+
+    Comentarios - Este es uno de los componentes más importantes de la codificación, ya que los comentarios que se incluyen en el código describen describe lo que realmente hace el código y todas las otras descripciones asociadas. Esta sección también ayuda a crear documentación de ayuda para otros desarrolladores.
+
+Documentación de Software
+
+La documentación de Software es una parte importante del proceso de software. Un documento bien escrito es una gran herramienta y es un medio repositorio de información necesario para conocer el proceso de software. La documentación de Software también aporta información sobre cómo se debe usar el producto.
+
+Una documentación mantenida correctamente debe incluir los documentos que se citan a continuación:
+
+    Documentación de requisitos - Esta documentación funciona como herramienta clave para diseñadores de software, desarroladores, y el equipo de evaluadores, para llevar a cabo sus respectivas tareas. Este documento contiene la descripción funcional, no funcional, y conductual del software que se intenta lograr.
+
+    El origen de este documento pueden ser datos almacenados previamente, software que ya está funcionando con el consumidor final, entrevistas con clientes, cuestionarios e investigaciones. Generalmente se almacena en forma de hoja de cálculo o de documento realizados con procesadores de texto, con el equipo de gestión de software de mayor calidad.
+
+    Esta documentación funciona como base para desarrollar el software y se usa mayormente en las fases de verificación y de validación. La mayor pare de casos de prueba se construyen partiendo de la documentación de requisitos.
+
+    Documentación de diseño de Software - Esta documentación contiene toda la información necesaria, que se requiere para construir el software. Incluye: (a) arquitectura de software de alto nivel, (b) Detalls de diseño Software, (c) Diagramas de flujo de datos, (d) Diseño de bases de datos
+
+    Estos documents funcionan como repositorio para que los desarrolladores implementen el software. A pesar de que estos documentos no den nigún detalle de cómo codificar el programa, dan la información necesaria que se requiere para las fases de codificación e implementación.
+
+    Documentación técnica - Esta documentación la mantienen desarrolladores y programadores. Estos documentos, en su conjunto, representan información sobre el código. Mientras escriben el código, los programadores también suelen mencionar objetivos del código, quién lo escribió, dónde se requerirá, qué hace y no hace, qué otros recursos usa el código, etc.
+
+    La documentación técnica incrementa el entendimiento entre varios programadores que trabajan en el mismo código. Incentiva la capacidad de reutilización del código. Facilita el proceso de eliminación y localización de errores.
+
+    Hay varias herramientas automatizadas disponibes y algunas ya vienen con su propio lenguaje de programación. Por ejemplo java viene con la herramienta JavaDoc tool para generar documentación técnica del código.
+
+    Documentación del usuario - Esta documentación es diferente en comparación con las mencionadas con anterioridad. Las que ya se han expuesto se mantienen para la aportación de información sobre el software y su proceso de desarrollo. Por el contrario, la documentación de usuario explica cómo se debe usar y cómo debe funcionar el producto software, con tal de lograr los resultados que se esperan.
+
+    Esta documentación puede incluir, procedimientos de instalación del software, guías de instrucciones, guías para el usuario, método de desinstalación y referencias especiales para obtener más información como actualización de licencias, etc.
+
+Retos de la implementación de Software
+
+Hay algunos retos que el equipo de desarrollo debe afrontar mientras se implementa el software. Algunos de ellos se explicitan a continuación:
+
+    Reutilización del código - La interfaces de programación de los lenguajes actuales son muy sofisticadas y están equipadas con grandes funciones de librería. Aún así, y a fin de disminuir el coste del producto final, la gestión organizacional prefiere reutiizar el código, el cual se creó con anterioridad para algún otro software. Hay asuntos de gran magnitud que deben ser confrontados por los programadores para tests de compatibilidad y decidiendo la cantidad de código se reutilizará.
+
+    Gestión de versiones - Cada vez que un nuevo software se entrega al consumidor, los desarrolladores deben mantener la documentación asociada a su configuración y a su versión. Esta documentación debe ser muy acurada y disponible a tiempo.
+
+    'Target-Host'(target de receptores) - El programa software que se está desarrollando en la organización, necesita ser diseñado para máquinas receptoras para el consumidor final. Pero a veces, es imposible diseñar un software que funciones en máquinas receptoras.
+
