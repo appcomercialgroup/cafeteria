@@ -1,3 +1,1 @@
-<?php
-
-include "head.php";
+    <?php include "./comp/generico/head/comp.php";?>

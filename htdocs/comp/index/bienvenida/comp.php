@@ -25,7 +25,7 @@
         </span>
         Dado el caso que estas plantillas están bajo la licencia GPL y Creative Commons trabajo en ella para hacer que sea dinámica con colección a base de datos y dotándola de funcionalidades que aumenten las capacidades de la misma convirtiéndola en una aplicación.
       </p>
-      <a class="pointer tm-more-button tm-more-button-welcome btn_modal_open">
+      <a class="pointer tm-more-button tm-more-button-welcome btn_modal_open btn_informacion">
         Saber mas
       </a>
     </div>

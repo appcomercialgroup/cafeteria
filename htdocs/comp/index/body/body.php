@@ -7,8 +7,7 @@
         </h2>
         <h2>
           Cafe House
-
-          <?php if (conectado()) {echo "Conectado";}?>
+        <?php Conexion();?>
         </h2>
         <p class="tm-welcome-description">
           This is free HTML5 website template from
