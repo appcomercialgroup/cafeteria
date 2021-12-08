@@ -1,0 +1,18 @@
+Requisitos del sistema para aplicación de cafetería virtual.
+
+
+Debe contar con un  control de usuario. 
+
+Inicio de sesión.
+
+Registro de usuarios. 
+
+Recuperación de contraseña y cambio de la misma. 
+
+Registro de inicios de sesión. 
+
+Perfil de usuario escalable para nuevas funcionalidades. Funcionalidades iniciales son perfil y datos básicos del usuario y un registro de compras en la tienda. 
+
+Debe tener un panel administrativo para manipular el contenido de aplicación tales como ofertas y productos. 
+
+Debe contar con una  jerarquía  administrativa
