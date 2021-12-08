@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <head>
-      <?php include "./comp/generico/head/comp.php";?>
-    </head>
+    <?php include "./comp/generico/head/comp.php";?>
   </head>
   <body>
     <?php include "./comp/menu/loader/comp.php";?>
