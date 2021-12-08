@@ -2,7 +2,7 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>
-  Cafe House Template
+  APP Cafe
 </title>
 <!--
 Cafe House Template
@@ -18,7 +18,7 @@ http://www.templatemo.com/tm-466-cafe-house
 <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 <link href="css/w3.css" rel="stylesheet"/>
 <!-- <link href="./css/inicio_sesion/inicio_sesion.css" rel="stylesheet"/> -->
-<link href="./css/inicio_sesion/css.css" rel="stylesheet"/>
+<link href="./css/inicio_sesion/registro/css.css" rel="stylesheet"/>
 <!-- <link href="./css/css.css" rel="stylesheet" type="text/css"/> -->
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,3 +28,9 @@ http://www.templatemo.com/tm-466-cafe-house
     <![endif]-->
 <script src="./js/chat.js" type="text/javascript">
 </script>
+<style>
+  .w3-animate-top {
+  position: relative;
+  animation: animatetop 0.9s !important;
+}
+</style>

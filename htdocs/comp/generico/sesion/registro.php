@@ -7,21 +7,27 @@
       <!--       <a class="tm-more-button margin-top-30 w3-right" >
         Read More
       </a> -->
-      <a class="tm-more-button w3-display-topright btn_cerar_modal_registro" style="margin-top: 10px; margin-right: 10px;">
-        Cerrar
-      </a>
+      <input class="tm-more-button w3-display-topright btn_cerar_modal_registro" style="margin-top: 10px; margin-right: 10px;" type="button" value="Cerrar"/>
       <h2>
         Registro
       </h2>
     </header>
     <div class="w3-container w3-padding fondo_modal cuerpo_modal">
-      <!--    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consequuntur eveniet eligendi, facere, vel, corporis, mollitia fuga odio eos quidem culpa nostrum iure veritatis assumenda maxime quisquam. Corporis, quis, provident!
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum doloremque voluptatibus accusantium quisquam totam quibusdam ut perferendis ipsum vero eos quia distinctio officiis accusamus sint deserunt placeat, magnam. Ea, iste!
-      </p> -->
-      <div class="w3-row">
+      <div class="w3-panel w3-pale-red w3-display-container alerta_mensaje w3-animate-top">
+        <span class="w3-button w3-large w3-display-topright" onclick="this.parentElement.style.display='none'">
+          x
+        </span>
+        <h3>
+          xxxxxxxx
+        </h3>
+        <p>
+          xxxxxxxxxxxxxx
+        </p>
+        <button class="tm-more-button w3-right btn_aceptar_alerta_mensaje">
+          Aceptar
+        </button>
+      </div>
+      <div class="w3-row formulario_registro">
         <div class="w3-col l6 m6 s12 w3-padding">
           <label class="w3-text-brown">
             <b>
@@ -60,7 +66,7 @@
             <span class="msj_pass">
             </span>
           </label>
-          <input class="w3-input w3-border w3-round pass" type="text"/>
+          <input class="w3-input w3-border w3-round pass" type="password"/>
         </div>
         <div class="w3-col l6 m6 s12 w3-padding">
           <label class="w3-text-brown">
@@ -70,7 +76,7 @@
             <span class="msj_confirma_pass">
             </span>
           </label>
-          <input class="w3-input w3-border w3-round confirma_pass" type="text"/>
+          <input class="w3-input w3-border w3-round confirma_pass" type="password"/>
         </div>
         <div class="w3-col l6 m6 s12 w3-padding">
           <label class="w3-text-brown">
@@ -96,12 +102,8 @@
       <input class="tm-more-button w3-left btn_enviar" type="button" value="Enviar"/>
     </div>
     <footer class="w3-container fondo_modal pie_modal w3-padding-16">
-      <a class="tm-more-button w3-left btn_inicio">
-        Inicio
-      </a>
-      <a class="tm-more-button w3-right btn_registro">
-        Registro
-      </a>
+      <input class="tm-more-button w3-left btn_inicio" type="button" value="Inicio"/>
+      <input class="tm-more-button w3-right btn_registro" type="button" value="Registro"/>
     </footer>
   </div>
 </div>
