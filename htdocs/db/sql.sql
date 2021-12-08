@@ -6,6 +6,12 @@ CREATE TABLE usuario (
     
 );
 
+
+ALTER TABLE usuario
+MODIFY COLUMN id_usuario int NOT NULL AUTO_INCREMENT,
+ADD CONSTRAINT PK_Usuario PRIMARY KEY (id_usuario);
+
+
 -- ALTER TABLE usuario 
 --     ADD COLUMN IF NOT EXISTS id_usuario int(11),
 --     ADD COLUMN IF NOT EXISTS nombre_usuario varchar(20),
@@ -84,22 +90,34 @@ CREATE TABLE pedidos (
 );
 
 
+CREATE TABLE mensaje (
+    id_mensaje int(11),
+    nombre_emisor varchar(50),
+    correo_emisor varchar(50),
+   asunto varchar(50),
+   mensaje varchar(255)
+
+); 
 
 
 
-
+-- ////////////////////////////////////
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+   ....
+); 
+-- ////////////////////////////////////
 
 CREATE TABLE table_name (
     column1 datatype,
     column2 datatype,
     column3 datatype,
    ....
-); CREATE TABLE table_name (
-    column1 datatype,
-    column2 datatype,
-    column3 datatype,
-   ....
-); CREATE TABLE table_name (
+); 
+
+CREATE TABLE table_name (
     column1 datatype,
     column2 datatype,
     column3 datatype,
