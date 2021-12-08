@@ -88,3 +88,35 @@
 .cuerpo_modal {
 	padding-bottom: 20px;
 }
+
+.modal_registro .pie_modal input[type="button"] {
+	border: none !important;
+	background-color: transparent !important;
+}
+
+.modal_registro input[type="button"] {
+	border: none !important;
+	background-color: transparent !important;
+}
+
+/*.form_trasicion {
+	height: 0px;
+	transition: height 10s;
+}*/
+
+.form_trasicion {
+	animation-duration: 1s;
+	animation-name: slidein;
+}
+
+@keyframes slidein {
+	from {
+		height: 100%;
+	}
+	75% {
+		height: 50%;
+	}
+	to {
+		height: 0%;
+	}
+}
