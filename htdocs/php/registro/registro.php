@@ -16,4 +16,6 @@ function FunctionName()
 
 }
 
-FunctionName();
+// FunctionName();
+
+include "inserta_usuario.php";
