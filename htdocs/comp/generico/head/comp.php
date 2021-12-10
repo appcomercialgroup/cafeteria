@@ -33,4 +33,8 @@ http://www.templatemo.com/tm-466-cafe-house
   position: relative;
   animation: animatetop 0.9s !important;
 }
+.modal_inicio_sesion footer,.modal_registro footer,.cuerpo_modal{
+  padding: 30px !important;
+  /*padding-right: 30px !important;*/
+}
 </style>
