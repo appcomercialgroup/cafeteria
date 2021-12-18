@@ -87,6 +87,7 @@
 
 .cuerpo_modal {
 	padding-bottom: 20px;
+	/*height: 20px;*/
 }
 
 .modal_registro .pie_modal input[type="button"] {
@@ -99,12 +100,16 @@
 	background-color: transparent !important;
 }
 
+.alerta_mensaje {
+	padding-bottom: 20px;
+}
+
 /*.form_trasicion {
 	height: 0px;
 	transition: height 10s;
 }*/
 
-.form_trasicion {
+/*.form_trasicion {
 	animation-duration: 1s;
 	animation-name: slidein;
 }
@@ -120,3 +125,4 @@
 		height: 0%;
 	}
 }
+*/

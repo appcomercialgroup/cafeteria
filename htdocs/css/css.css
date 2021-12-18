@@ -226,3 +226,8 @@
 		margin-top: 10px;
 	}
 }
+
+/*a:hover, a:focus {
+	color: transparent !important;
+	text-decoration: none;
+}*/
