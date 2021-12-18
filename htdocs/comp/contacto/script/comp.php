@@ -35,6 +35,6 @@
 	document.body.appendChild(script);
 	}
 	$(document).ready(function(){
-	loadGoogleMap();
+	// loadGoogleMap();
 	});
 	</script>
