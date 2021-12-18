@@ -1,1 +1,0 @@
-    <?php include "./comp/generico/sesion/comp.php";?>

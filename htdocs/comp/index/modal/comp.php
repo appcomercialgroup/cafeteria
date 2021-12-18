@@ -2,4 +2,4 @@
 
 include "informacion.php";
 // include "inicio_sesion.php";
-include "./comp/generico/sesion/comp.php";
+include "./comp/generico/inicio_sesion/comp.php";

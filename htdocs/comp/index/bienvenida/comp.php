@@ -1,25 +1,25 @@
 <section class="tm-welcome-section">
   <div class="container tm-position-relative">
-    <div class="tm-lights-container">
-    <!--   <img alt="Light" class="light light-1" src="img/light.png"/>
-      <img alt="Light" class="light light-2" src="img/light.png"/>
-      <img alt="Light" class="light light-3" src="img/light.png"/> -->
-    </div>
     <div class="row tm-welcome-content">
+      <div class="tm-lights-container">
+        <img alt="Light" class="light light-1" src="img/light.png"/>
+        <img alt="Light" class="light light-2" src="img/light.png"/>
+        <img alt="Light" class="light light-3" src="img/light.png"/>
+      </div>
       <h2 class="white-text tm-handwriting-font tm-welcome-header">
-        <img alt="Line" class="tm-header-line" src="img/header-line.png"/>
-       Bienvenido a
-        <img alt="Line" class="tm-header-line" src="img/header-line.png"/>
+        <!-- <img alt="Line" class="tm-header-line" src="img/header-line.png"/> -->
+        Bienvenido a
+        <!-- <img alt="Line" class="tm-header-line" src="img/header-line.png"/> -->
       </h2>
       <h2 class="gold-text tm-welcome-header-2">
         Mi cafetería
       </h2>
       <p class="gray-text tm-welcome-description">
-       Esto es un prototipo en construcción  que usa
+        Esto es un prototipo en construcción  que usa
         <span class="gold-text">
           Bootstrap v3.3.5
         </span>
-       proporcionada por
+        proporcionada por
         <span class="gold-text">
           templatemo
         </span>
