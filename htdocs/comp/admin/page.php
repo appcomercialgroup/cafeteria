@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,7 +24,7 @@
     <!-- Pie Paguina -->
     <?php include "./comp/generico/footer/comp.php";?>
     <?php include "./comp/index/modal/informacion.php";?>
-    <?php include "./comp/generico/sesion/comp.php";?>
+    <?php include "./comp/admin/modal/comp.php";?>
     <!-- Pie Paguina -->
     <!-- ////////////////////////////////////////////////////////////////////// -->
     <!--  Script -->
