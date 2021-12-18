@@ -74,7 +74,6 @@ CREATE TABLE complemento (
 
 
 
-
 CREATE TABLE orden (
     id_orden int(11),
     id_usuario int(11),
@@ -94,12 +93,18 @@ CREATE TABLE mensaje (
     id_mensaje int(11),
     nombre_emisor varchar(50),
     correo_emisor varchar(50),
-   asunto varchar(50),
-   mensaje varchar(255)
+    asunto varchar(50),
+    mensaje varchar(255)
 
 ); 
 
-
+CREATE TABLE inicio_sesion (
+    id_inicio_sesion int(11),
+    id_usuario int(11),
+    fecha_inicio_sesion DATE,
+    hora_inicio_sesion TIME,
+   
+); 
 
 -- ////////////////////////////////////
 CREATE TABLE table_name (

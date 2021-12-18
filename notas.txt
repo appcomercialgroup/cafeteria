@@ -2,7 +2,7 @@
 //////////////////////////////
 sudo /opt/lampp/lampp start
 //////////////////////////////
-
+https://paypal.me/codefuncode?country.x=US&locale.x=es_XC
 
 https://codepen.io/Mohuth/pen/QWgrPvp
 
@@ -12,3 +12,9 @@ http://webcafeteria00001.epizy.com/
 
 localhost/Proyectos/APP/web_cafeteria_00001/htdocs/index.php
 http://localhost/Proyectos/APP/web_cafeteria_00001/htdocs/index.php
+
+http://localhost/Proyectos/APP/web_cafeteria_00001/htdocs/index.php
+Trabajando en 
+./htdocs/php/inicio_sesion/comp.php
+./htdocs/js/inicio_sesion/inicio/inicio_sesion.js
+
