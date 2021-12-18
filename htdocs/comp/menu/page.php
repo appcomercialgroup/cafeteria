@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +10,7 @@
     <?php include "./comp/menu/bienvenida/comp.php";?>
     <?php include "./comp/menu/body/comp.php";?>
     <?php include "./comp/menu/footer/comp.php";?>
-    <?php include "./comp/menu/sesion/comp.php";?>
+    <?php include "./comp/menu/modal/comp.php";?>
     <?php include "./comp/menu/script/comp.php";?>
   </body>
 </html>

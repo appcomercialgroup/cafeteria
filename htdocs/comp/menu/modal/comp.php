@@ -1,1 +1,1 @@
-    <?php include "./comp/generico/script/comp.php";?>
+   <?php include "./comp/generico/inicio_sesion/comp.php";?>
