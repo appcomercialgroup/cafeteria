@@ -59,13 +59,43 @@
               <?php endif;?>
             </li>
             <li>
+              <?php if (isset($_SESSION['activa']) && $_SESSION['activa'] == "si") {?>
+              <!--     <a class="btn_inicio_sesion" href="#">
+                Sesión Iniciada
+              </a> -->
+              <div class="w3-dropdown-click">
+                <a class="btn_inicio_sesion" onclick="myFunction()" style="">
+                  Perfil
+                </a>
+                <div class="w3-dropdown-content w3-bar-block w3-border" id="Demo">
+                  <a class="w3-bar-item w3-button" href="#">
+                    Compras
+                  </a>
+                  <a class="w3-bar-item w3-button" href="#">
+                    Configuración
+                  </a>
+                  <a class="w3-bar-item w3-button" href="#">
+                    Salir
+                  </a>
+                </div>
+              </div>
+              <?php } else {?>
               <a class="btn_inicio_sesion" href="#">
                 inicia sesión
               </a>
+              <?php }?>
             </li>
           </ul>
         </nav>
       </div>
     </div>
+  </div>
+  <div class="w3-container w3-pale-green w3-bottombar w3-border-green w3-border mensaje_navegador_compatible">
+    <p>
+      Para una mejor experiencia descarga Firefox
+      <a href="https://www.mozilla.org/es-ES/firefox/new/" target="_blank">
+        aquí
+      </a>
+    </p>
   </div>
 </div>
