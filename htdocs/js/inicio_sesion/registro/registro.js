@@ -1,14 +1,23 @@
  function fun_modal_registro(argument) {
-  let modal_registro = document.querySelector(".modal_registro");
+  let modal_registro =
+    document.querySelector(
+      ".modal_registro");
 
-  let btn_registro = document.querySelector(".modal_registro .btn_registro");
+  let btn_registro =
+    document.querySelector(
+      ".modal_registro .btn_registro");
 
-  let modal_sesion = document.querySelector(".modal_sesion");
+  let modal_sesion =
+    document.querySelector(
+      ".modal_sesion");
 
-  let btn_inicio = document.querySelector(".modal_registro .btn_inicio");
+  let btn_inicio =
+    document.querySelector(
+      ".modal_registro .btn_inicio");
 
   let btn_cerar_modal_registro =
-    document.querySelector(".modal_registro .btn_cerar_modal_registro");
+    document.querySelector(
+      ".modal_registro .btn_cerar_modal_registro");
 
   btn_inicio.addEventListener("click", function(argument) {
     modal_sesion.style.display = "block";
@@ -19,21 +28,42 @@
     modal_registro.style.display = "none";
   });
 
-  let txt_nombre = document.querySelector(".modal_registro .nombre");
-  let txt_usuario = document.querySelector(".modal_registro .usuario");
-  let txt_correo = document.querySelector(".modal_registro .correo");
-  let txt_pass = document.querySelector(".modal_registro .pass");
-  let txt_confirma_pass = document.querySelector(".modal_registro .confirma_pass");
-  let txt_pregunta = document.querySelector(".modal_registro .pregunta");
-  let txt_respuesta = document.querySelector(".modal_registro .respuesta");
-  let btn_enviar = document.querySelector(".modal_registro .btn_enviar");
-  let alerta_mensaje = document.querySelector(".alerta_mensaje");
+  let txt_nombre =
+    document.querySelector(
+      ".modal_registro .nombre");
+  let txt_usuario =
+    document.querySelector(
+      ".modal_registro .usuario");
+  let txt_correo =
+    document.querySelector(
+      ".modal_registro .correo");
+  let txt_pass =
+    document.querySelector(
+      ".modal_registro .pass");
+  let txt_confirma_pass =
+    document.querySelector(
+      ".modal_registro .confirma_pass");
+  let txt_pregunta =
+    document.querySelector(
+      ".modal_registro .pregunta");
+  let txt_respuesta =
+    document.querySelector(
+      ".modal_registro .respuesta");
+  let btn_enviar =
+    document.querySelector(
+      ".modal_registro .btn_enviar");
+  let alerta_mensaje =
+    document.querySelector(
+      ".modal_registro .alerta_mensaje");
   let btn_aceptar_alerta_mensaje =
-    document.querySelector(".modal_registro .btn_aceptar_alerta_mensaje");
+    document.querySelector(
+      ".modal_registro .btn_aceptar_alerta_mensaje");
 
   btn_aceptar_alerta_mensaje.style.display = "none";
   alerta_mensaje.style.display = "none";
-  // let cerar_alerta_mensaje = document.querySelector(".alerta_mensaje span");
+  // let cerar_alerta_mensaje =
+  document.querySelector(
+    ".modal_registro .alerta_mensaje span");
 
   // cerar_alerta_mensaje.addEventListener("click", function(argument) {
   //   alerta_mensaje.style.display = "none";
@@ -89,17 +119,92 @@
       datos_form.pregunta &&
       datos_form.respuesta) {
 
-      fun_registrar(
-        txt_nombre,
-        txt_usuario,
-        txt_correo,
-        txt_pass,
-        txt_confirma_pass,
-        txt_pregunta,
-        txt_respuesta
-      );
+      if (txt_pass.value == txt_confirma_pass.value) {
+        let alerta_mensaje =
+          document.querySelector(
+            ".modal_registro .alerta_mensaje");
+        alerta_mensaje.style.display = "none";
+        fun_registrar(
+          txt_nombre,
+          txt_usuario,
+          txt_correo,
+          txt_pass,
+          txt_confirma_pass,
+          txt_pregunta,
+          txt_respuesta
+        );
+
+      } else {
+        let alerta_mensaje =
+          document.querySelector(
+            ".modal_registro .alerta_mensaje");
+        let alerta_mensaje_h3 =
+          document.querySelector(
+            ".modal_registro .alerta_mensaje h3");
+        let alerta_mensaje_p =
+          document.querySelector(
+            ".modal_registro .alerta_mensaje p");
+        alerta_mensaje_h3.textContent = "Alerta en la contraseña";
+        alerta_mensaje_p.textContent = "Por favor verifique las contraseñas, pues deben conicidir";
+        alerta_mensaje.style.display = "block";
+      }
 
     } else {
+      // datos_form.nombre &&
+      //      datos_form.usuario &&
+      //      datos_form.correo &&
+      //      datos_form.pass &&
+      //      datos_form.confirma_pass &&
+      //      datos_form.pregunta &&
+      //      datos_form.respuesta
+      let campos_vacios = [];
+      if (datos_form.nombre == false) {
+        campos_vacios.push("Nombre");
+      }
+      if (datos_form.usuario == false) {
+        campos_vacios.push("Usuario");
+      }
+      if (datos_form.correo == false) {
+        campos_vacios.push("Correo");
+      }
+      if (datos_form.pass == false) {
+        campos_vacios.push("Contraseña");
+      }
+      if (datos_form.confirma_pass == false) {
+        campos_vacios.push("Confirma la contraseña");
+      }
+      if (datos_form.pregunta == false) {
+        campos_vacios.push("Pregunta de seguridad");
+      }
+      if (datos_form.respuesta == false) {
+        campos_vacios.push("Respuesta");
+      }
+      let texto = "";
+      for (var i = 0; i < campos_vacios.length; i++) {
+
+        if (i == campos_vacios.length - 1) {
+          texto += campos_vacios[i];
+        } else if (i == campos_vacios.length - 2) {
+          texto += campos_vacios[i] + " y ";
+        } else {
+          texto += campos_vacios[i] + ", ";
+        }
+      }
+
+      let alerta_mensaje =
+        document.querySelector(
+          ".modal_registro .alerta_mensaje");
+      let alerta_mensaje_h3 =
+        document.querySelector(
+          ".modal_registro .alerta_mensaje h3");
+      let alerta_mensaje_p =
+        document.querySelector(
+          ".modal_registro .alerta_mensaje p");
+      alerta_mensaje_h3.textContent = "Tienes campos vacíos";
+      alerta_mensaje_p.textContent = "Por favor verifique los siguientes  campos:  " + texto;
+      alerta_mensaje.style.display = "block";
+
+      console.log(texto);
       console.log('No se envia ');
       console.log('=======================================');
     }
@@ -187,6 +292,7 @@
 
     xhr.onreadystatechange = function() { // Call a function when the state changes.
       if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+        console.log(xhr.responseText);
         console.log(xhr.response);
         if (JSON.parse(xhr.response)) {
 
@@ -198,14 +304,23 @@
 
             console.log('Usuario existe');
 
-            let alerta_mensaje = document.querySelector(".alerta_mensaje");
-            let alerta_mensaje_h3 = document.querySelector(".alerta_mensaje h3");
-            let alerta_mensaje_p = document.querySelector(".alerta_mensaje p");
+            let alerta_mensaje =
+              document.querySelector(
+
+                ".modal_registro .alerta_mensaje");
+            let alerta_mensaje_h3 =
+              document.querySelector(
+                ".modal_registro .alerta_mensaje h3");
+            let alerta_mensaje_p =
+              document.querySelector(
+                ".modal_registro .alerta_mensaje p");
+
             alerta_mensaje.classList.remove("w3-pale-green");
             alerta_mensaje.classList.add("w3-pale-red");
             alerta_mensaje_h3.textContent = "Alerta!";
             alerta_mensaje_p.textContent =
-              "Este usuario o el correo ya existe, prueba otro o recupera tu contraseña!";
+              "Este usuario o el correo ya existe," +
+              " prueba otro o recupera tu contraseña!";
 
             alerta_mensaje.style.display = "block";
 
@@ -213,27 +328,46 @@
 
             console.log('Insertado con éxito');
 
-            let alerta_mensaje = document.querySelector(".alerta_mensaje");
-            let alerta_mensaje_h3 = document.querySelector(".alerta_mensaje h3");
-            let alerta_mensaje_p = document.querySelector(".alerta_mensaje p");
+            let alerta_mensaje =
+              document.querySelector(
+                ".modal_registro .alerta_mensaje");
+            let alerta_mensaje_h3 =
+              document.querySelector(
+                ".modal_registro .alerta_mensaje h3");
+            let alerta_mensaje_p =
+              document.querySelector(
+                ".modal_registro .alerta_mensaje p");
 
             alerta_mensaje.classList.add("w3-pale-green");
             alerta_mensaje.classList.remove("w3-pale-red");
             alerta_mensaje_h3.textContent = "Prefecto!";
-            alerta_mensaje_p.textContent = "Bienvenido a la aplicación de mi cafetería!";
+            alerta_mensaje_p.textContent =
+              "Bienvenido a la aplicación de mi cafetería!";
             alerta_mensaje.style.display = "block";
-            let all_btn_modal_registro =
-              document.querySelectorAll(".modal_registro input, .modal_registro a");
 
-            let formulario_registro = document.querySelector(".formulario_registro");
-            formulario_registro.classList.add("form_trasicion");
+            let all_btn_modal_registro =
+              document.querySelectorAll(
+                ".modal_registro input, .modal_registro a");
+
+            let formulario_registro =
+              document.querySelector(
+                ".formulario_registro");
+            let pie_modal =
+              document.querySelector(
+                ".modal_registro .pie_modal");
+
+            formulario_registro.style.display = "none";
+
+            pie_modal.style.display = "none";
+
             for (var i = 0; i < all_btn_modal_registro.length; i++) {
 
               all_btn_modal_registro[i].disabled = true;
             }
 
             let btn_aceptar_alerta_mensaje =
-              document.querySelector(".modal_registro .btn_aceptar_alerta_mensaje");
+              document.querySelector(
+                ".modal_registro .btn_aceptar_alerta_mensaje");
             btn_aceptar_alerta_mensaje.disabled = false;
             btn_aceptar_alerta_mensaje.style.display = "block";
 
