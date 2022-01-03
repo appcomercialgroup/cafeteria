@@ -8,7 +8,12 @@
       </div>
       <h2 class="white-text tm-handwriting-font tm-welcome-header">
         <!-- <img alt="Line" class="tm-header-line" src="img/header-line.png"/> -->
-        Bienvenido a
+
+
+        Bienvenido
+        <?php if (isset($_SESSION['activa']) && $_SESSION['activa'] == "si"): ?>
+        <?=$_SESSION['nombre_usuario'];?>
+        <?php endif;?> a
         <!-- <img alt="Line" class="tm-header-line" src="img/header-line.png"/> -->
       </h2>
       <h2 class="gold-text tm-welcome-header-2">
