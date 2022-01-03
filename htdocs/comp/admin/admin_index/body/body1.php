@@ -1,26 +1,5 @@
 <div class="tm-main-section light-gray-bg">
-  <div class="w3-container">
-    <h2>
-      Navigation Bars
-    </h2>
-    <p>
-      The
-      <strong>
-        w3-bar
-      </strong>
-      class is a container for displaying HTML elements horizontally.
-    </p>
-    <p>
-      The
-      <strong>
-        w3-bar-item
-      </strong>
-      class defines the container elements.
-    </p>
-    <p>
-      It it a perfect tool for creating navigation bars:
-    </p>
-  </div>
+
   <div class="w3-bar w3-black">
     <a class="w3-bar-item w3-button" href="#">
       Home
@@ -221,7 +200,7 @@
       </div>
       <div class="col-lg-12 tm-special-container margin-top-60">
         <div class="tm-special-container-left">
-          <!-- left -->
+
           <div class="tm-special-item">
             <div class="tm-special-img-container">
               <img alt="Special" class="tm-special-img img-responsive" src="img/special-1.jpg"/>
@@ -239,7 +218,7 @@
           </div>
         </div>
         <div class="tm-special-container-right">
-          <!-- right -->
+
           <div>
             <div class="tm-special-item">
               <div class="tm-special-img-container">
