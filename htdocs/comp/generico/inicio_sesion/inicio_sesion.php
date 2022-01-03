@@ -21,7 +21,7 @@
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum doloremque voluptatibus accusantium quisquam totam quibusdam ut perferendis ipsum vero eos quia distinctio officiis accusamus sint deserunt placeat, magnam. Ea, iste!
       </p> -->
-      <form action="./php/sesion_cookie/comp.php" class="form_inicio_sesion" method="post">
+      <form action="<?=$_SERVER['PHP_SELF'];?>" class="form_inicio_sesion" method="post">
         <div class="">
           <label class="w3-text-brown">
             <b>
@@ -35,10 +35,12 @@
             </b>
           </label>
           <input class="w3-input w3-border w3-round pass" name="pass" type="password"/>
-          <input name="sesion" type="hidden" value=""/>
+
+          <input class="token_inicio" name="token_inicio" type="hidden" value=""/>
           <input class="tm-more-button w3-left btn_enviar" type="button" value="Enviar"/>
         </div>
       </form>
+
     </div>
     <footer class="w3-container fondo_modal pie_modal w3-padding-16">
       <div class="row">

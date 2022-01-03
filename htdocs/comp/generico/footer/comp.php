@@ -1,25 +1,30 @@
 <footer>
   <div class="tm-black-bg">
+    <div class="w3-margin-left w3-panel w3-gray w3-leftbar w3-border-yellow">
+      <p>
+        Esta aplicación no representa un negocio real, solo está trabajada para demostrar mis habilidades como programador de aplicaciones web con PHP, JavaScript, MariaDB, CSS3 y HTML5. En este momento el servidor de prueba no admite muchas funcionalidades, sin embargo, puedo trabajarlas en un servidor de pago sin problemas.
+      </p>
+    </div>
     <div class="container">
       <div class="row margin-bottom-60">
-        <nav class="col-lg-3 col-md-3 tm-footer-nav tm-footer-div">
+        <!--   <nav class="col-lg-3 col-md-3 tm-footer-nav tm-footer-div">
           <h3 class="tm-footer-div-title">
-            Main Menu
+            Menú principal
           </h3>
           <ul>
             <li>
               <a href="#">
-                Home
+                Inicio
               </a>
             </li>
             <li>
               <a href="#">
-                About Us
+                Sobre mi
               </a>
             </li>
             <li>
               <a href="#">
-                Directory
+                Directorio
               </a>
             </li>
             <li>
@@ -29,50 +34,50 @@
             </li>
             <li>
               <a href="#">
-                Our Services
+                Mis servicios
               </a>
             </li>
           </ul>
-        </nav>
-        <div class="col-lg-5 col-md-5 tm-footer-div">
+        </nav> -->
+        <div class="col-lg-6 col-md-6 tm-footer-div">
           <h3 class="tm-footer-div-title">
-            About Us
+            Sobre mi
           </h3>
           <p class="margin-top-15">
-            Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+            Soy un desarrollador web experimentado que  trabaja rápido y eficiente, además minimizamos las dependencias de terceros  al máximo para que los datos de mis clientes estén debidamente protegidos y controlados.
           </p>
           <p class="margin-top-15">
-            Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+            Puedo trabajar con CMS  y desarrollar una web hermosa en poco tiempo y económica y también puedo hacer su aplicación tan compleja como usted lo desee.
           </p>
         </div>
-        <div class="col-lg-4 col-md-4 tm-footer-div">
+        <div class="col-lg-6 col-md-6 tm-footer-div">
           <h3 class="tm-footer-div-title">
-            Get Social
+            Redes sociales
           </h3>
           <p>
-            Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante.
+            Encuéntrame en las redes sociales  y descubre como hacer aplicaciones web personalizadas livianas y potentes para todo tipo de negocios.
           </p>
           <div class="tm-social-icons-container">
-            <a class="tm-social-icon" href="#">
+            <a class="tm-social-icon" href="https://www.facebook.com/codefuncode" target="_blank">
               <i class="fa fa-facebook">
               </i>
             </a>
-            <a class="tm-social-icon" href="#">
+            <a class="tm-social-icon" href="https://twitter.com/codefuncode" target="_blank">
               <i class="fa fa-twitter">
               </i>
             </a>
-            <a class="tm-social-icon" href="#">
+            <!--    <a class="tm-social-icon" href="#">
               <i class="fa fa-linkedin">
               </i>
-            </a>
-            <a class="tm-social-icon" href="#">
+            </a> -->
+            <a class="tm-social-icon" href="https://www.youtube.com/channel/UCJz8iymjuITyH3F01PpK2oQ" target="_blank">
               <i class="fa fa-youtube">
               </i>
             </a>
-            <a class="tm-social-icon" href="#">
+            <!--    <a class="tm-social-icon" href="#">
               <i class="fa fa-behance">
               </i>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>

@@ -63,18 +63,24 @@
               <!--     <a class="btn_inicio_sesion" href="#">
                 Sesión Iniciada
               </a> -->
+              <?php $url_salir = $_SERVER['PHP_SELF'] . "?salir=si";?>
               <div class="w3-dropdown-click">
                 <a class="btn_inicio_sesion" onclick="myFunction()" style="">
-                  Perfil
+                  Perfil de <?=$_SESSION['nombre_usuario'];?>
                 </a>
                 <div class="w3-dropdown-content w3-bar-block w3-border" id="Demo">
                   <a class="w3-bar-item w3-button" href="#">
                     Compras
                   </a>
-                  <a class="w3-bar-item w3-button" href="#">
+                  <a class="w3-bar-item w3-button" href="./perfil.php">
                     Configuración
                   </a>
-                  <a class="w3-bar-item w3-button" href="#">
+                  <?php if ($_SESSION['nombre_tipo_usuario'] == "administrador") {?>
+                  <a class="w3-bar-item w3-button" href="./admin.php">
+                    Panel Adminstrador
+                  </a>
+                  <?php }?>
+                  <a class="w3-bar-item w3-button" href="<?=$url_salir;?>">
                     Salir
                   </a>
                 </div>
@@ -90,7 +96,7 @@
       </div>
     </div>
   </div>
-  <div class="w3-container w3-pale-green w3-bottombar w3-border-green w3-border mensaje_navegador_compatible">
+  <div class="w3-container w3-pale-green w3-bottombar w3-border-green w3-border mensaje_navegador_compatible" style="display: none;">
     <p>
       Para una mejor experiencia descarga Firefox
       <a href="https://www.mozilla.org/es-ES/firefox/new/" target="_blank">

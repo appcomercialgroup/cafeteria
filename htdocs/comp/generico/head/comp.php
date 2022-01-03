@@ -20,8 +20,9 @@ http://www.templatemo.com/tm-466-cafe-house
 <!-- <link href="./css/inicio_sesion/inicio_sesion.css" rel="stylesheet"/> -->
 <?php if (isset($_SESSION['activa']) && $_SESSION['activa'] == "si") {?>
 <?php } else {?>
-<link href="./css/inicio_sesion/registro/css.css" rel="stylesheet"/>
+<!-- <link href="./css/inicio_sesion/registro/css.css" rel="stylesheet"/> -->
 <?php }?>
+<link href="./css/inicio_sesion/registro/css.css" rel="stylesheet"/>
 <!-- <link href="./css/css.css" rel="stylesheet" type="text/css"/> -->
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -76,5 +77,10 @@ http://www.templatemo.com/tm-466-cafe-house
 .w3-dropdown-content .w3-button {
   color: white !important;
   background-color: transparent !important;
+}
+.tm-black-bg {
+  background-color: #302f2f;
+  color: white;
+  padding-top: 5px !important;
 }
 </style>
