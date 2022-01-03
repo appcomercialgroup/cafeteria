@@ -107,11 +107,10 @@ CREATE TABLE inicio_sesion (
 ); 
 
 -- ////////////////////////////////////
-CREATE TABLE table_name (
-    column1 datatype,
-    column2 datatype,
-    column3 datatype,
-   ....
+CREATE TABLE tipo_usuario (
+    id_tipo_usuario int(11),
+    nombre_tipo_usuario varchar(50),
+
 ); 
 -- ////////////////////////////////////
 
