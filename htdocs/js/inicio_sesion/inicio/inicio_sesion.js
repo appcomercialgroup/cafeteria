@@ -4,6 +4,12 @@ function inicio_sesion(argument) {
 	let btn_inicio_sesion = document.querySelector(".btn_inicio_sesion");
 	let btn_cerar_modal_sesion = document.querySelector(".modal_sesion .btn_cerar_modal_sesion");
 	let mobile_menu_icon = document.querySelector(".mobile_menu_icon");
+	let modal_inicio_error_sesion = document.querySelector(".modal_inicio_error_sesion");
+	let btn_cerar_modal_error_sesion = document.querySelector(".btn_cerar_modal_error_sesion");
+
+	btn_cerar_modal_error_sesion.addEventListener("click", function(argument) {
+		modal_inicio_error_sesion.style.display = "none";
+	});
 
 	// btn_inicio_sesion
 	// sesion.style.display = "block";
@@ -59,6 +65,9 @@ function inicio_sesion(argument) {
 	});
 
 	function inicio_de_sesion(datos) {
+		let mensaje = document.querySelector(
+			".modal_inicio_error_sesion .cuerpo_modal p");
+
 		var xhr = new XMLHttpRequest();
 		xhr.open("POST", './php/inicio_sesion/comp.php', true);
 
@@ -76,12 +85,34 @@ function inicio_sesion(argument) {
 				if (estado.respuesta == "logeado") {
 					console.log("logeado");
 					console.log(estado.datos_usuario);
+					console.log(estado.token_inicio);
 					let form_inicio_sesion =
 						document.querySelector(".modal_inicio_sesion .form_inicio_sesion");
-					// form_inicio_sesion.submit();
-				} else if (estado.respuesta == "incorrecta") {
 
+					let sesion =
+						document.querySelector(".modal_inicio_sesion .sesion");
+
+					let token_inicio =
+						document.querySelector(".modal_inicio_sesion .token_inicio");
+
+					token_inicio.value = estado.token_inicio;
+
+					console.log(form_inicio_sesion);
+
+					location.reload();
+
+					// form_inicio_sesion.submit();
+
+				} else if (estado.respuesta == "incorrecta") {
+					mensaje.textContent = "La contraseña es incorecta";
+					modal_sesion.style.display = "none";
+					modal_inicio_error_sesion.style.display = "block";
 					console.log("Contraseña incorrecta");
+				} else if (estado.respuesta == "error") {
+					mensaje.textContent = "El usuario no existe. Utilisa ese nombre de usuario para crtear tu cuenta";
+					modal_sesion.style.display = "none";
+					modal_inicio_error_sesion.style.display = "block";
+					console.log("Contraseña error");
 				}
 			}
 		}
@@ -94,3 +125,17 @@ function inicio_sesion(argument) {
 }
 
 inicio_sesion();
+
+// {
+// 	"respuesta": "logeado",
+// 	"datos_usuario": {
+// 		"id_usuario": "1",
+// 		"nombre_usuario": "Carlos",
+// 		"pass_usuario": "$2y$10$4V5IgQbNa8hVG1zBdY9jRevLPvLEYdkKYlxBvD7MKCeFwI0oTVHKC",
+// 		"correo": "caleman97914@mail.com",
+// 		"pregunta": "Pregunta",
+// 		"respuesta": "REspuesta",
+// 		"usuario": "caleman9791"
+// 	},
+// 	"token_inicio": "8e1791212252e4deeb2b49ff032fffe7cde46587"
+// }
