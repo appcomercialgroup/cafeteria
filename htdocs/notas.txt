@@ -1,1 +1,12 @@
 notas.txt
+TRabajar variables de sesion 
+./htdocs/php/inicio_sesion/comp.php
+
+Eliminar formulario 
+./htdocs/comp/generico/inicio_sesion/inicio_sesion.php
+./htdocs/js/inicio_sesion/inicio/inicio_sesion.js
+
+
+
+./htdocs/php/global/comp.php
+./htdocs/php/tipo_usuario/comp.php
