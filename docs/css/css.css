@@ -6,3 +6,24 @@
 .sobre-mi-contacto {
 	color: white;
 }
+
+#cafe-grano-taza {
+	/*	position: relative;*/
+	/*	border: 10px solid white;*/
+	/*	margin-left: 100px;*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+
+p {
+	/*	font-size: 15px !important;*/
+	/*color: white !important;*/
+}
+
+/*.img_popular {
+	width: 98%;
+	height: 200px;
+}
+*/
